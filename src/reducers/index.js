@@ -3,12 +3,15 @@
 
 import { combineReducers } from 'redux';
 import UsersReducer from './reducer_users';
+import ActiveUserReducer from './reducer_activeUser'
 
 const rootReducer = combineReducers({
 
   // on mappe le retour du Reducer 'UsersReducer' dans la variable 'users'
-  users: UsersReducer
-  
+  users: UsersReducer,
+  // on mappe le retour du Reducer 'ActiveUserReducer' dans la variable 'activeUser'
+  activeUser : ActiveUserReducer 
+
 });
 
 export default rootReducer;
