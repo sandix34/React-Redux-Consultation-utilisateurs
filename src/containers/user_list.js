@@ -31,19 +31,24 @@ class UserList extends Component {
 le reducer va retourner le state, on récupère la partie qui nous intéresse du state => state.users
 et on va la mettre dans "myUsers"
 */
-function mapStateToProps(state) {
+const mapStateToProps = (state) => {
   return {
     myUsers: state.users
   };
 }
 
 // envoie et dispatche l'action aux reducers
-function mapDispatchToProps(dispatch) {
-  bindActionCreators({ selectUser: selectUser }, dispatch);
+const  mapDispatchToProps = (dispatch) => {
+ return {
+   dispatch,
+   ...bindActionCreators({selectUser}, dispatch)
+
+ }
 }
+
 
 // connection du composant container à Redux
 export default connect(
   mapStateToProps,
-  mapDispatchToProps
+   mapDispatchToProps 
 )(UserList);

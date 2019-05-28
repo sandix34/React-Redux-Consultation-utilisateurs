@@ -1,9 +1,9 @@
-// Fichier de configuration des Reducers où on associe le retrour d'un Reducer 
+// Fichier de configuration des Reducers où on associe le retour d'un Reducer 
 // à une variable qui sera une variable du state de l'application
 
 import { combineReducers } from 'redux';
 import UsersReducer from './reducer_users';
-import ActiveUserReducer from './reducer_activeUser'
+import ActiveUserReducer from './reducer_active_user'
 
 const rootReducer = combineReducers({
 
