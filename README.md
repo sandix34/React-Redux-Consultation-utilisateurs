@@ -1,5 +1,7 @@
 ## Une simple application de consultation d'utilisateurs pour une introduction à Redux
 
+![redux](https://user-images.githubusercontent.com/44428775/67926795-3fd4ac00-fbb7-11e9-88ab-fdf1402e4835.gif)
+
 Ce projet a été démarré avec [Create React App](https://github.com/facebook/create-react-app).
 
 ## Scripts disponibles
